@@ -1,0 +1,176 @@
+```@import url('https://fonts.googleapis.com/css?family=Lato:400,700%7COswald:500');
+
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+h4, li, button, a {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+
+.mobile_logo {
+    width: 50px;
+}
+
+.desktop_logo {
+    width:150px;
+    display: none;
+}
+
+.desktop_navigation {
+    display: none;
+}
+
+.mobile_menu {
+    width: 32px;
+}
+
+@media(min-width:750px) {
+    .mobile_logo {
+        display: none;
+    }
+
+    .desktop_logo {
+        display: block;
+    }
+
+}
+
+@media(min-width: 900px) {
+    .mobile_menu {
+        display: none;
+    }
+    .desktop_navigation {
+        display: block;
+    }
+}```
+
+
+Ben Callis [11:26 AM]
+uploaded this file 
+img.zip
+4 MB Zip
+
+Ben Callis [11:52 AM]
+```@import url('https://fonts.googleapis.com/css?family=Lato:400,700%7COswald:500');
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #F9FAFC;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+
+h4, li, button, a {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+
+.mobile_logo {
+    width: 50px;
+}
+
+.desktop_logo {
+    width:150px;
+    display: none;
+}
+
+.desktop_navigation {
+    display: none;
+}
+
+.desktop_navigation ul li {
+    display: inline-block;
+    margin-left: 16px;
+    color:rgba(0,0,0,0.6);
+    font-size: .8rem;
+}
+
+.mobile_menu {
+    width: 32px;
+}
+
+.mobile_menu_container {
+    width: 75%;
+    height: calc(100vh - 55px);
+    background: #999;
+    position: fixed;
+    right: -100%;
+    top: 75px;
+    animation: slide_out 2s infinite;
+}
+
+
+@keyframes slide_out {
+    0%   {
+        right: -100%;
+    }
+    73%{
+        right: 30px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+
+
+@media(min-width:750px) {
+    html {
+        font-size: 18px;
+    }
+    .mobile_logo {
+        display: none;
+    }
+
+    .desktop_logo {
+        display: block;
+    }
+
+}
+
+@media(min-width: 900px) {
+    html {
+        font-size: 20px;
+    }
+
+    .main_header {
+        justify-content: flex-start;
+    }
+
+    .mobile_menu {
+        display: none;
+    }
+    .desktop_navigation {
+        display: block;
+    }
+}
